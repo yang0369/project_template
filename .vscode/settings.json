@@ -1,0 +1,22 @@
+{
+    "python.testing.pytestArgs": [
+        "tests"
+    ], // set pytest root dir
+
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": ["${workspaceFolder}/transformers/src", "${workspaceFolder}/project", "${workspaceFolder}/unilm/layoutlmft/layoutlmft"],  // set pylance paths, default import paths
+    "python.autoComplete.extraPaths": ["${workspaceFolder}", "${workspaceFolder}/project"],  // IntelliSense default dir
+    // "python.pythonPath": "C://Users/yangk/anaconda3/envs/xtract/python.exe",
+
+    // "python.linting.pylintArgs": [
+    //     "--rcfile=C://Users/yangk/AIPO_Projects/XTRACT/xtract/.p
+    // ],
+    // "python.linting.pylintArgs": ["--reports", "12", "--disable", "I0011"],
+
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+}

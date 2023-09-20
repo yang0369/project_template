@@ -1,0 +1,12 @@
+# Purpose of this script is to run flake8 linting before each commit
+
+# pre-steps:
+# 1) pip install pre-commit
+# 2) pre-commit install
+
+repos:
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+    - id: flake8
+      args: ['--select=E20,E21,E22,E23,E24,E3,F401,F8', '--ignore=E226']
