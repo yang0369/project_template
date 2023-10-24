@@ -10,7 +10,114 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": true,
+            "env": {
+                "CUDA_LAUNCH_BLOCKING": "1",
+                "PYTHONPATH": "${workspaceFolder}/project:${workspaceFolder}/transformers/src:${workspaceFolder}/unilm/layoutlmft/layoutlmft"
+            }
+        },
+        {
+            "name": "Python: Finetune_SER",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/project",
+            "program": "${workspaceFolder}/project/main-ie-train.py",
+            "args": [
+                "Finetune_SER",
+                // "--saved_model_path",
+                // "data/06_models/layoutlm/checkpoints/checkpoint_10.pt",
+                "--train_fr_start",
+                // "--no-train_fr_start",
+                // "--eval_only"
+
+            ],
+            "env": {
+                "CUDA_LAUNCH_BLOCKING": "1",
+                "PYTHONPATH": "${workspaceFolder}/project"
+            }
+
+        },
+        {
+            "name": "Python: finetune_RE",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/project",
+            "program": "${workspaceFolder}/project/main-ie-train.py",
+            "args": [
+                "finetune_RE"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/project:${workspaceFolder}/transformers/src:${workspaceFolder}/unilm/layoutlmft/layoutlmft"
+            }
+
+        },
+        {
+            "name": "Python: layoutlm_inference",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/project/main.py",
+            "args": ["layoutlm_inference"],
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}"
+            }
+        },
+        {
+            "name": "Python: merging_kvp",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/project/main.py",
+            "args": ["merging_kvp"],
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}"
+            }
+        },
+        {
+            "name": "Python: run_e2e",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/project/main.py",
+            "args": ["E2E"],
+            "env": {
+                // "CUDA_LAUNCH_BLOCKING": "1",
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/transformers/src"
+            }
+        },
+        {
+            "name": "Python: evaluate_kvp",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/project/main.py",
+            "args": ["E2E Evaluation", "--model_name", "LayoutLM"],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/transformers/src:${workspaceFolder}/project:${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: Summarize Long Text",
+            "type": "python",
+            "request": "launch",
+            "module": "src.summarize_longtext",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
+            }
         }
     ]
 }

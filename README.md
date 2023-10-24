@@ -1,2 +1,2 @@
-# utility_scripts
-store all the utility scripts for future usage, e.g. custom_logger
+# PROJECT TEMPLATE
+This repository provides a comprehensive python project template, where developers can start coding with a well designed structure and utility scripts, e.g. custom logger, flake8 check etc.

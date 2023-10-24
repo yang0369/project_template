@@ -1,22 +1,33 @@
 {
-    "python.testing.pytestArgs": [
-        "tests"
-    ], // set pytest root dir
-
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.analysis.extraPaths": ["${workspaceFolder}/transformers/src", "${workspaceFolder}/project", "${workspaceFolder}/unilm/layoutlmft/layoutlmft"],  // set pylance paths, default import paths
-    "python.autoComplete.extraPaths": ["${workspaceFolder}", "${workspaceFolder}/project"],  // IntelliSense default dir
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/project",
+        "${workspaceFolder}/transformers/src",
+        "${workspaceFolder}/unilm/layoutlmft/layoutlmft"],  // set pylance paths, default import paths
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/project"
+    ],
     // "python.pythonPath": "C://Users/yangk/anaconda3/envs/xtract/python.exe",
 
+    // pylint
+    // "python.linting.pylintPath": "C://Users/yangk/anaconda3/envs/xtract/Scripts/pylint",
+    // "python.linting.pylintEnabled": false,
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.flake8Path": ".",
+    // "python.linting.flake8Args": ["--select E20,E21,E22,E23,E24,E3,F401,F8", "--ignore=E226", "--verbose"],
+
+
     // "python.linting.pylintArgs": [
-    //     "--rcfile=C://Users/yangk/AIPO_Projects/XTRACT/xtract/.p
+    //     "--rcfile=C://Users/yangk/AIPO_Projects/XTRACT/xtract/.pylintrc"
     // ],
     // "python.linting.pylintArgs": ["--reports", "12", "--disable", "I0011"],
 
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true
-    },
+    // "files.watcherExclude": {
+    //     "**/.git/objects/**": true,
+    //     "**/.git/subtree-cache/**": true,
+    //     "**/node_modules/*/**": true
+    // },
+    // "python.linting.enabled": true,
 }
