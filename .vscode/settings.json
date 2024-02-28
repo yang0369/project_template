@@ -9,15 +9,16 @@
         "${workspaceFolder}",
         "${workspaceFolder}/project"
     ],
+
+    // flake8 linting ref: https://github.com/microsoft/vscode-flake8
+    "flake8.enabled": true,
+    "flake8.args": ["--config=", "${workspaceFolder}/.flake8"],
+
     // "python.pythonPath": "C://Users/yangk/anaconda3/envs/xtract/python.exe",
 
     // pylint
     // "python.linting.pylintPath": "C://Users/yangk/anaconda3/envs/xtract/Scripts/pylint",
     // "python.linting.pylintEnabled": false,
-    // "python.linting.flake8Enabled": true,
-    // "python.linting.flake8Path": ".",
-    // "python.linting.flake8Args": ["--select E20,E21,E22,E23,E24,E3,F401,F8", "--ignore=E226", "--verbose"],
-
 
     // "python.linting.pylintArgs": [
     //     "--rcfile=C://Users/yangk/AIPO_Projects/XTRACT/xtract/.pylintrc"
