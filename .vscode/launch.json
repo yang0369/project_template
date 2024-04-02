@@ -6,19 +6,19 @@
     "configurations": [
         {
             "name": "Python: Current File",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
             "env": {
                 "CUDA_LAUNCH_BLOCKING": "1",
-                "PYTHONPATH": "${workspaceFolder}/project:${workspaceFolder}/transformers/src:${workspaceFolder}/unilm/layoutlmft/layoutlmft"
+                "PYTHONPATH": "${workspaceFolder}"
             }
         },
         {
             "name": "Python: Finetune_SER",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -41,7 +41,7 @@
         },
         {
             "name": "Python: finetune_RE",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -57,7 +57,7 @@
         },
         {
             "name": "Python: layoutlm_inference",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -70,7 +70,7 @@
         },
         {
             "name": "Python: merging_kvp",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -83,7 +83,7 @@
         },
         {
             "name": "Python: run_e2e",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -97,7 +97,7 @@
         },
         {
             "name": "Python: evaluate_kvp",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -110,7 +110,7 @@
         },
         {
             "name": "Python: Summarize Long Text",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "module": "src.summarize_longtext",
             "console": "integratedTerminal",

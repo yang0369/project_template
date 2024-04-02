@@ -55,13 +55,13 @@ class CustomLogger(logging.Logger):
             self.addHandler(file_handler)
 
 
-# demo
-energy_tracker = CustomLogger(level=logging.DEBUG)
+# # demo
+# energy_tracker = CustomLogger(level=logging.DEBUG)
 
-energy_tracker.info("start time")
+# energy_tracker.info("start time")
 
-num_of_gpus = torch.cuda.device_count()
-energy_tracker.info(f"No. of GPUs used: {num_of_gpus}")
+# num_of_gpus = torch.cuda.device_count()
+# energy_tracker.info(f"No. of GPUs used: {num_of_gpus}")
 
 
-energy_tracker.info("end time")
+# energy_tracker.info("end time")
