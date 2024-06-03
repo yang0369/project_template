@@ -1,9 +1,9 @@
 [flake8]
-
+max-line-length = 120
+extend-ignore = E203
 # specify the folders that does not require linting
 exclude = src/*
 ; select = E20,E21,E22,E23,E24,E3,F401,F8
-; ignore = E226
 
-
-; for how to write flake8 config, ref: https://flake8.pycqa.org/en/latest/user/configuration.html
+; for how to write flake8 config: https://flake8.pycqa.org/en/latest/user/configuration.html
+; for all error code: https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
